@@ -6,7 +6,7 @@ var methodOverride = require("method-override");
 
 var app = express();
 app.use(express.static(__dirname + "/public"));
-
+var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({
     extended: false
 }));
@@ -23,5 +23,4 @@ var routes = require("./controllers/routes");
 
 app.use("/", routes);
 
-var port = 3000;
-app.listen(port);
+app.listen(PORT);
