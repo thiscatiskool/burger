@@ -1,6 +1,6 @@
 var express = require("express");
 var handbars = require("express-handlebars");
-var mysql = require("mysql");
+//var mysql = require("mysql");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 
